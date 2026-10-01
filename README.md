@@ -2,13 +2,33 @@
 
 Agent skills for Harvest time tracking, for Claude Code and Codex. They talk to Harvest through the Harvest MCP server.
 
-## Setup
+## Install
 
-1. Add the Harvest MCP server and sign in to it:
-   - Claude Code: `claude mcp add --transport http --scope user harvest https://api.harvestapp.com/mcp`, then run `/mcp` in Claude Code and authenticate `harvest`.
-   - Codex: add an MCP server named `harvest` with the same URL.
-2. Link or copy each folder under `skills/` into `~/.claude/skills/` and/or `~/.codex/skills/`.
-3. Run `refresh-harvest-projects` once to build your project cache.
+```bash
+npx skills add nothingalike/harvest-skills --global
+```
+
+Then connect the Harvest MCP server (below) and run `refresh-harvest-projects` once to build your project cache.
+
+## Connect the Harvest MCP server
+
+The skills reach Harvest through its MCP server at `https://api.harvestapp.com/mcp`, which you sign in to with your own Harvest account. Name the server `harvest`, since the skills look for its tools under that name.
+
+### Claude Code
+
+Add the server for all your projects:
+
+```bash
+claude mcp add --transport http --scope user harvest https://api.harvestapp.com/mcp
+```
+
+Then sign in: start `claude`, run `/mcp`, pick **harvest**, and choose **Authenticate**. Your browser opens to Harvest; log in and approve access. Check the connection with:
+
+```bash
+claude mcp get harvest
+```
+
+It should no longer say "Needs authentication". Start a new session to pick up the Harvest tools.
 
 ## Skills
 
