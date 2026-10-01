@@ -1,0 +1,9 @@
+interface:
+  display_name: "Refresh Harvest Projects"
+  short_description: "Cache Kyle Johns' active Harvest projects"
+  default_prompt: "Use $refresh-harvest-projects to refresh Kyle Johns' assigned Harvest projects cache."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "harvest"
+      description: "Authenticated Harvest MCP connection for project and assignment data"

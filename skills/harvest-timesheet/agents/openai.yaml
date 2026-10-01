@@ -1,0 +1,10 @@
+interface:
+  display_name: "Harvest Timesheet"
+  short_description: "Turn today's work into Harvest time"
+  default_prompt: "Use $harvest-timesheet to turn today's work into my Harvest timesheet."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "harvest"
+      description: "Harvest MCP server"

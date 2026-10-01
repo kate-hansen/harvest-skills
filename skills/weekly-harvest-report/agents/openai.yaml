@@ -1,0 +1,10 @@
+interface:
+  display_name: "Weekly Harvest Report"
+  short_description: "Summarize weekly Harvest time by project"
+  default_prompt: "Use $weekly-harvest-report to summarize my Harvest time for last week by project."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "harvest"
+      description: "Harvest MCP server"

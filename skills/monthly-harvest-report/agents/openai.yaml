@@ -1,0 +1,10 @@
+interface:
+  display_name: "Monthly Harvest Report"
+  short_description: "Summarize monthly Harvest time by project"
+  default_prompt: "Use $monthly-harvest-report to summarize my Harvest time for last month by project."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "harvest"
+      description: "Harvest MCP server"
