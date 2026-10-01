@@ -30,6 +30,22 @@ claude mcp get harvest
 
 It should no longer say "Needs authentication". Start a new session to pick up the Harvest tools.
 
+### Codex
+
+Add the server:
+
+```bash
+codex mcp add harvest --url https://api.harvestapp.com/mcp
+```
+
+Then sign in, which opens your browser to Harvest:
+
+```bash
+codex mcp login harvest
+```
+
+Start a new Codex session to pick up the Harvest tools.
+
 ## Skills
 
 | Skill | What it does |
