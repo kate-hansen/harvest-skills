@@ -4,7 +4,7 @@ How `harvest-timesheet` learns where a user keeps their daily updates. Read this
 
 ## The file
 
-`~/.config/harvest-skills/timesheet.md` is plain Markdown with two sections. Sources say, in plain words, where a day's work can be found and how to read it; `{date}` stands for the work date as `YYYY-MM-DD`. Mappings are labels the user has already tied to a Harvest project and task.
+`~/.cache/harvest/timesheet.md` is plain Markdown with two sections. Sources say, in plain words, where a day's work can be found and how to read it; `{date}` stands for the work date as `YYYY-MM-DD`. Mappings are labels the user has already tied to a Harvest project and task.
 
 ```markdown
 # Timesheet config
@@ -40,7 +40,7 @@ A user of the `plate` skill from headquarters keeps the day's log in `~/.headqua
 
 ```markdown
 ## Sources
-- Plate log: `~/.headquarters/plate/log/{date}.md`. Every line under Done, Blockers, Questions, and Notes is evidence of the day's work. Lines start with their plate project (`coleto: ...`); a line without one is placed by its story ID, or asked about.
+- Plate log: `~/.headquarters/plate/log/{date}.md`. Every line under Done, Blockers, Questions, and Notes is evidence of the day's work. Lines start with their plate project (`acme-shop: ...`); a line without one is placed by its story ID, or asked about.
 - Plate: `~/.headquarters/plate/plate.md`. Items marked `[/]` are in progress and may have been worked on today, so list them as `in progress` candidates for the user to keep or skip.
 - Ask me: after reading the plate, ask what else happened today.
 ```

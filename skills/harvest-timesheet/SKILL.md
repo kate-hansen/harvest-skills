@@ -11,7 +11,7 @@ The user owns every choice that ends up in Harvest: which items become time, the
 
 ## Config
 
-The config lives at `~/.config/harvest-skills/timesheet.md`. It lists the user's sources and any saved project mappings. When it is missing, or the user wants to change where updates come from, follow [CONFIG.md](CONFIG.md) to set it up, then continue.
+The config lives at `~/.cache/harvest/timesheet.md`. It lists the user's sources and any saved project mappings. When it is missing, or the user wants to change where updates come from, follow [CONFIG.md](CONFIG.md) to set it up, then continue.
 
 ## Steps
 
