@@ -1,0 +1,10 @@
+interface:
+  display_name: "Time Off Harvest Report"
+  short_description: "Summarize time off from Harvest by category"
+  default_prompt: "Use $time-off-harvest-report to summarize my time out of the office this year by category, with a subtotal each and a grand total."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "harvest"
+      description: "Harvest MCP server"
