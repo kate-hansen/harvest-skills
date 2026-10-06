@@ -53,6 +53,7 @@ Start a new Codex session to pick up the Harvest tools.
 | `refresh-harvest-projects` | Caches your active Harvest projects and tasks, with their IDs. |
 | `weekly-harvest-report` | Summarizes a week of logged time by project. Read-only. |
 | `monthly-harvest-report` | Summarizes a month of logged time by project, with weekly totals and an email-ready version. Read-only. |
+| `time-off-harvest-report` | Summarizes time out of the office by category — vacation, sick, holiday, and other leave — with a subtotal each and a grand total in hours and days. Read-only. |
 | `harvest-timesheet` | Turns a day's work into Harvest time entries, from wherever you keep your daily updates or from what you tell it, and submits them once you approve. |
 
 ## Your data
